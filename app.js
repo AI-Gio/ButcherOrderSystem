@@ -56,6 +56,7 @@ import { initializeApp } from "firebase/app";
 const firebaseConfig = {
   apiKey: "AIzaSyBLajdjs45NpqMlNumNk278JZcyQW7upVk",
   authDomain: "boss-c883a.firebaseapp.com",
+  databaseURL: "https://boss-c883a-default-rtdb.europe-west1.firebasedatabase.app/", // Use your actual database URL here
   projectId: "boss-c883a",
   storageBucket: "boss-c883a.appspot.com",
   messagingSenderId: "794161984824",
