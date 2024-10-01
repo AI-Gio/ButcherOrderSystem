@@ -1,3 +1,6 @@
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js';
+import { getDatabase, ref, set, onValue, remove } from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js';
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBLajdjs45NpqMlNumNk278JZcyQW7upVk",
@@ -10,8 +13,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);  // Use global firebase object
-const database = firebase.database();
+const app = initializeApp(firebaseConfig);  // Use global firebase object
+const database = getDatabase(app);
 
 // Get elements
 const orderInput = document.getElementById('order-number');
